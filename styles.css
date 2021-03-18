@@ -1,0 +1,138 @@
+
+
+.body{
+	display: flex;
+	justify-content: center;
+}
+
+
+.ball {
+	background-image: url('img/soccer-ball.svg');
+	background-size: auto 100%;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	animation-direction: alternate;
+	animation-name: move-xy;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	/*animation-timing-function: cubic-bezier(.5,0.05,1,.5);*/
+	/*cubic-bezier(0.42, 0.2, 0.58, 1);*/
+	
+  }
+
+
+  .ball-container{
+	  border: 4px solid black;
+	  background-color: #009C00;
+	  width: 698px;
+	  height: 550px;
+	  
+  }
+  @keyframes move-xy
+  {
+	  0%
+	  {
+		  top:-1vh;
+		  left: 0px;
+		  transform: rotate(0deg);
+		  background-repeat: no-repeat;
+	  }    
+	  25%
+	  {
+		  top: 73vh;
+		  left: 150px;
+		  transform: rotate(360deg);
+	  }    
+	  50%
+	  {
+		  top: -1vh;
+		  left: 300px;
+		  transform: rotate(0deg);
+	  }    
+	  75%
+	  {
+		  top: 73vh;
+		  left: 450px;
+		  transform: rotate(360deg);
+	  }    
+	  100%
+	  {
+		  top: -1vh;
+		  left: 600px;
+		  transform: rotate(0deg);
+	  }
+  }
+/*
+  @keyframes move-y {
+	0% { left: 0px; top: 0%;}
+	10% { left: 0px; top: 78%;}
+	15% { left: 0px; top: 20%;}
+	25% { left: 0px; top: 78%;}
+	35% { left: 0px; top: 35%;}
+	45% { left: 0px; top: 78%;}
+	55% { left: 0px; top: 55%;}
+	65% { left: 0px; top: 79%;}
+	75% { left: 0px; top: 64%;}
+	85% { left: 0px; top: 79%;}
+	95% { left: 0px; top: 68%;}
+	100% { left: 0px; top: 79%;}
+
+}
+
+
+*/
+
+
+
+
+/*
+	@keyframes bounce {
+		60%, 80%, to { 
+		  transform: translateY(400px); 
+		  animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+		}
+		70% { transform: translateY(300px); }
+		90% { transform: translateY(360px); }
+	  }
+	  @keyframes roll {
+		from { 
+		  transform: translateY(400px) rotate(0deg);
+		}
+		to { 
+		  transform: translate(400px, 400px) rotate(359deg);
+		}
+	  }
+	  
+	  
+	  body {
+		  background: linear-gradient(white 4000px, black 0);
+		  min-height: 100vh;
+	  }
+
+	  .ball-container{
+		border: 4px solid black;
+		width: 1000px;
+		height: 500px;
+	}
+	  
+	  .ball {
+		width: 100px;
+		height: 100px;
+		background-image: url('img/soccer-ball.svg');
+		
+		background-size: auto 100%;
+		position: relative;
+		
+		
+	  
+		border-radius: 50%;
+		margin: 0 auto 0 25px;
+		
+		animation: bounce 2s cubic-bezier(.755, .05, .855, .06) forwards,
+				   roll 3s 2.05s ease forwards;
+		
+	  }
+
+	  */
